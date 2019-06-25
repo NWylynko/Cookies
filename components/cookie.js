@@ -8,7 +8,7 @@ export default class CookieButton extends React.Component {
         <TouchableOpacity
           style={styles.container}
           onPress={() => this.props.addCookies(1)}>
-          <Image style={styles.cookie} source={require('assets/cookie.jpg')} />
+          <Image style={styles.cookie} source={require('assets/cookie.png')} />
           <Text style={styles.number}>Cookies: {Math.round(this.props.cookies * 100) / 100}</Text>
           <Text style={styles.number}>CPS: {Math.round(this.props.cps * 100) / 100}</Text>
         </TouchableOpacity>
