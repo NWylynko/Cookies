@@ -5,13 +5,14 @@ import { Constants } from 'expo';
 // You can import from local files
 import CookieButton from './components/cookie';
 import Shop from './components/shop';
+import shops from './components/shops.json';
 
 export default class App extends React.Component {
   state = {
     cookies: 0,
     cps: 0,
     amount_owned: [0, 0, 0, 0, 0],
-    shops: require('./components/shops.json'),
+    shops: require(shops),
   };
 
   addCookies = amount =>
