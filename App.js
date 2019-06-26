@@ -11,7 +11,7 @@ export default class App extends React.Component {
     cookies: 0,
     cps: 0,
     amount_owned: [0, 0, 0, 0, 0],
-    shops: require('components/shops.json'),
+    shops: require('./components/shops.json'),
   };
 
   addCookies = amount =>
