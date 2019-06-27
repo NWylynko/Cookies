@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, Image } from 'react-native';
 
-import cookie from './assets/cookie.png';
+import cookie_png from '../assets/cookie.png';
 
 export default class CookieButton extends React.Component {
   render() {
@@ -10,7 +10,7 @@ export default class CookieButton extends React.Component {
         <TouchableOpacity
           style={styles.container}
           onPress={() => this.props.addCookies(1)}>
-          <Image style={styles.cookie} source={require(cookie)} />
+          <Image style={styles.cookie} source={cookie_png} />
           <Text style={styles.number}>Cookies: {Math.round(this.props.cookies * 100) / 100}</Text>
           <Text style={styles.number}>CPS: {Math.round(this.props.cps * 100) / 100}</Text>
         </TouchableOpacity>
